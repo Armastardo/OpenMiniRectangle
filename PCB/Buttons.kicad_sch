@@ -5,128 +5,6 @@
   (paper "A5")
 
   (lib_symbols
-    (symbol "Device:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "LED" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "LED diode" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Light emitting diode" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "LED_0_1"
-        (polyline
-          (pts
-            (xy -1.27 -1.27)
-            (xy -1.27 1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 0)
-            (xy 1.27 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -1.27)
-            (xy 1.27 1.27)
-            (xy -1.27 0)
-            (xy 1.27 -1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.048 -0.762)
-            (xy -4.572 -2.286)
-            (xy -3.81 -2.286)
-            (xy -4.572 -2.286)
-            (xy -4.572 -1.524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.778 -0.762)
-            (xy -3.302 -2.286)
-            (xy -2.54 -2.286)
-            (xy -3.302 -2.286)
-            (xy -3.302 -1.524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "LED_1_1"
-        (pin passive line (at -3.81 0 0) (length 2.54)
-          (name "K" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 3.81 0 180) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 0.762 0.508 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "R_Small" (at 0.762 -1.016 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor, small symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_Small_0_1"
-        (rectangle (start -0.762 1.778) (end 0.762 -1.778)
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (at 1.27 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -487,17 +365,10 @@
     (uuid f77b7de1-b647-473e-a4e2-a343c7d9074c)
   )
 
-  (global_label "HOME" (shape input) (at 30.226 20.447 180) (fields_autoplaced)
+  (global_label "HOME" (shape input) (at 173.101 87.122 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 061bfb00-66ab-466f-b847-cd2db670dbf3)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 22.0588 20.447 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "LED2" (shape input) (at 21.082 66.04 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 077b05ce-72eb-4434-896c-cb13b10accf8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 13.5196 66.04 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 164.9338 87.122 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -540,13 +411,6 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 28547fef-730b-4138-a051-6d311045d52a)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 117.729 32.1158 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "LED1" (shape input) (at 21.844 78.613 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 2e5e2bb9-60a2-40c2-8acb-29553c9411ca)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 14.2816 78.613 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -634,13 +498,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "LED3" (shape input) (at 21.971 54.483 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid bccc7b5f-c588-4e76-aff1-db49dcb55fea)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 14.4086 54.483 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "MS" (shape input) (at 139.065 27.94 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid c5095331-1d90-4a5f-90c5-7d62c7f403f4)
@@ -648,10 +505,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "SELECT" (shape input) (at 29.845 30.988 180) (fields_autoplaced)
+  (global_label "SELECT" (shape input) (at 172.72 97.663 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid d9e54505-2a76-4d01-8ff7-42eb24f82a8d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 20.166 30.988 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 163.041 97.663 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -666,7 +523,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 112.903 61.214 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0019fa45-6cae-4002-9ee0-812b77431d84)
-    (property "Reference" "SW26" (at 110.617 65.532 0)
+    (property "Reference" "SW16" (at 110.617 65.532 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 112.903 64.77 0)
@@ -683,7 +540,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW26") (unit 1)
+          (reference "SW16") (unit 1)
         )
       )
     )
@@ -692,7 +549,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 125.857 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 05473698-2aef-439c-aa33-cf3ec11d2cef)
-    (property "Reference" "SW12" (at 130.429 24.257 0)
+    (property "Reference" "SW24" (at 130.429 24.257 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 125.857 21.971 0)
@@ -709,32 +566,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW12") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 34.671 54.483 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 06be9de6-3918-4677-ab6b-33b7c06ba2ff)
-    (property "Reference" "#PWR057" (at 41.021 54.483 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 38.862 55.118 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 34.671 54.483 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 34.671 54.483 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4ca0bbe1-5df3-43c9-9791-9c08b5c13580))
-    (instances
-      (project "OpenMiniRectangle"
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR057") (unit 1)
+          (reference "SW24") (unit 1)
         )
       )
     )
@@ -743,7 +575,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 147.193 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 07609bfd-7979-4eff-b37d-f02876e526dc)
-    (property "Reference" "SW16" (at 151.765 24.257 0)
+    (property "Reference" "SW36" (at 151.765 24.257 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 147.193 21.971 0)
@@ -760,7 +592,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW16") (unit 1)
+          (reference "SW36") (unit 1)
         )
       )
     )
@@ -769,7 +601,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 148.463 41.783 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0c747f68-f965-4f42-81a8-df49bfb5ea25)
-    (property "Reference" "SW24" (at 153.035 40.64 0)
+    (property "Reference" "SW38" (at 153.035 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 148.463 38.354 0)
@@ -786,7 +618,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW24") (unit 1)
+          (reference "SW38") (unit 1)
         )
       )
     )
@@ -795,7 +627,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 112.903 61.214 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ed54392-df7c-4846-9f57-81742adba6f7)
-    (property "Reference" "SW27" (at 117.475 60.071 0)
+    (property "Reference" "SW17" (at 117.475 60.071 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 112.903 57.785 0)
@@ -812,7 +644,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW27") (unit 1)
+          (reference "SW17") (unit 1)
         )
       )
     )
@@ -821,7 +653,7 @@
   (symbol (lib_id "power:GND") (at 95.758 17.145 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1060bccb-03dc-4586-aa5f-9fee6329ee65)
-    (property "Reference" "#PWR051" (at 95.758 10.795 0)
+    (property "Reference" "#PWR037" (at 95.758 10.795 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 95.758 13.716 0)
@@ -837,33 +669,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR051") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:LED") (at 29.972 66.04 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 10f4039a-0c5c-4a53-96f5-74db0a0012c0)
-    (property "Reference" "D5" (at 31.5595 59.563 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 31.5595 62.103 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 29.972 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 29.972 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 99d7e419-58d5-45d5-9c09-8f7eb6208f4a))
-    (pin "2" (uuid 1c122a8a-7ed4-48e8-96d7-e28803398931))
-    (instances
-      (project "OpenMiniRectangle"
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "D5") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -872,7 +678,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 134.239 61.214 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 118e6705-1316-489a-bcb4-f4fb1b56a621)
-    (property "Reference" "SW30" (at 138.811 60.071 0)
+    (property "Reference" "SW28" (at 138.811 60.071 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 134.239 57.785 0)
@@ -889,7 +695,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW30") (unit 1)
+          (reference "SW28") (unit 1)
         )
       )
     )
@@ -898,7 +704,7 @@
   (symbol (lib_id "power:GND") (at 112.649 22.86 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1be2f270-423c-4901-94c6-e3544ce20b66)
-    (property "Reference" "#PWR036" (at 112.649 16.51 0)
+    (property "Reference" "#PWR039" (at 112.649 16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 112.649 19.431 0)
@@ -914,7 +720,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -945,47 +751,10 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Small") (at 24.384 78.613 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 2000b625-a7da-4039-ac6a-2974d4c1e7b4)
-    (property "Reference" "R8" (at 24.384 77.0636 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1k" (at 24.384 78.613 90)
-      (effects (font (size 0.8 0.8)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 24.384 78.613 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 24.384 78.613 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C25190" (at 24.384 78.613 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 49669638-2c11-43cc-8983-03e149c45783))
-    (pin "2" (uuid 71407ffc-0415-4500-985a-0d4a13bf0a67))
-    (instances
-      (project "OpenRectangle"
-        (path "/0ee7bd02-e26d-4978-ae8c-675a718c78c0"
-          (reference "R8") (unit 1)
-        )
-      )
-      (project "OpenMiniRectangle"
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39"
-          (reference "R8") (unit 1)
-        )
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "R13") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 144.653 22.86 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 204d4661-9b13-482d-93db-98ca6388d9d0)
-    (property "Reference" "#PWR039" (at 144.653 16.51 0)
+    (property "Reference" "#PWR048" (at 144.653 16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.653 19.431 0)
@@ -1001,7 +770,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -1010,7 +779,7 @@
   (symbol (lib_id "power:GND") (at 153.035 58.674 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 20c1496c-e689-4c1d-ab44-3822db195e83)
-    (property "Reference" "#PWR048" (at 153.035 52.324 0)
+    (property "Reference" "#PWR050" (at 153.035 52.324 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 153.035 55.245 0)
@@ -1026,7 +795,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -1035,7 +804,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 115.189 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 25f7edb5-64f9-418a-9c6c-f870799dda3f)
-    (property "Reference" "SW10" (at 119.761 24.257 0)
+    (property "Reference" "SW18" (at 119.761 24.257 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 115.189 21.971 0)
@@ -1052,7 +821,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW10") (unit 1)
+          (reference "SW18") (unit 1)
         )
       )
     )
@@ -1087,7 +856,7 @@
   (symbol (lib_id "power:GND") (at 86.995 46.355 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 32fa0776-7342-4d5a-924e-92ce58ddf8f6)
-    (property "Reference" "#PWR035" (at 86.995 40.005 0)
+    (property "Reference" "#PWR036" (at 86.995 40.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 86.995 42.926 0)
@@ -1103,7 +872,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -1112,7 +881,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 127.127 41.783 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3491a21b-1545-4261-9e60-9c50f8dbc54f)
-    (property "Reference" "SW20" (at 125.095 45.974 0)
+    (property "Reference" "SW26" (at 125.095 45.974 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 127.127 45.339 0)
@@ -1129,7 +898,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW20") (unit 1)
+          (reference "SW26") (unit 1)
         )
       )
     )
@@ -1138,7 +907,7 @@
   (symbol (lib_id "power:GND") (at 76.327 46.355 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 349e11f3-bb57-4430-9474-58ddb7e0c0e1)
-    (property "Reference" "#PWR034" (at 76.327 40.005 0)
+    (property "Reference" "#PWR035" (at 76.327 40.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.327 42.926 0)
@@ -1154,25 +923,25 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 35.306 20.447 0) (mirror y) (unit 1)
+  (symbol (lib_id "Switch:SW_Push") (at 178.181 87.122 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 44f7a6cd-aeb2-47d1-a74e-e47ee8c1d444)
-    (property "Reference" "SW43" (at 35.306 14.224 0)
+    (property "Reference" "SW43" (at 178.181 80.899 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "SW_Push" (at 35.306 16.764 0)
+    (property "Value" "SW_Push" (at 178.181 83.439 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 35.306 15.367 0)
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 178.181 82.042 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 35.306 15.367 0)
+    (property "Datasheet" "~" (at 178.181 82.042 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d4c20eb5-fc51-4b71-bb97-880ad1e32f23))
@@ -1183,7 +952,7 @@
           (reference "SW43") (unit 1)
         )
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW42") (unit 1)
+          (reference "SW43") (unit 1)
         )
       )
     )
@@ -1192,7 +961,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 137.795 41.783 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 45b0d981-2a42-4907-875d-7bd761bbd106)
-    (property "Reference" "SW22" (at 135.763 45.974 0)
+    (property "Reference" "SW32" (at 135.763 45.974 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 137.795 45.339 0)
@@ -1209,7 +978,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW22") (unit 1)
+          (reference "SW32") (unit 1)
         )
       )
     )
@@ -1218,7 +987,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 115.189 25.4 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4643b9c1-7878-4cea-b57d-71fe96ea3d5e)
-    (property "Reference" "SW11" (at 113.411 29.591 0)
+    (property "Reference" "SW19" (at 113.411 29.591 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 115.189 28.956 0)
@@ -1235,7 +1004,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW11") (unit 1)
+          (reference "SW19") (unit 1)
         )
       )
     )
@@ -1244,7 +1013,7 @@
   (symbol (lib_id "power:GND") (at 145.923 39.243 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 464624d4-98a0-4298-ba39-9c6eb3b3f7e7)
-    (property "Reference" "#PWR043" (at 145.923 32.893 0)
+    (property "Reference" "#PWR049" (at 145.923 32.893 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 145.923 35.814 0)
@@ -1260,7 +1029,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -1269,7 +1038,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 78.867 48.895 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4646ca94-3056-4014-91d8-9d677fecad69)
-    (property "Reference" "SW6" (at 75.819 53.086 0)
+    (property "Reference" "SW10" (at 75.819 53.086 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 78.867 52.451 0)
@@ -1286,7 +1055,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW6") (unit 1)
+          (reference "SW10") (unit 1)
         )
       )
     )
@@ -1295,7 +1064,7 @@
   (symbol (lib_id "power:GND") (at 133.985 22.86 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4aad740a-2e69-4335-bc69-7b77cb85c27b)
-    (property "Reference" "#PWR038" (at 133.985 16.51 0)
+    (property "Reference" "#PWR045" (at 133.985 16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 133.985 19.431 0)
@@ -1311,7 +1080,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -1320,7 +1089,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 64.897 69.342 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 53b8ba5d-707a-4cd7-a3ab-b625225cc5f4)
-    (property "Reference" "SW36" (at 69.469 68.199 0)
+    (property "Reference" "SW4" (at 69.469 68.199 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 64.897 65.913 0)
@@ -1337,7 +1106,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW36") (unit 1)
+          (reference "SW4") (unit 1)
         )
       )
     )
@@ -1346,7 +1115,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 98.298 19.685 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59543514-2c4c-4862-800c-a0e6f8ef08b4)
-    (property "Reference" "SW40" (at 98.298 23.876 0)
+    (property "Reference" "SW14" (at 98.298 23.876 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 98.298 23.241 0)
@@ -1363,7 +1132,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW40") (unit 1)
+          (reference "SW14") (unit 1)
         )
       )
     )
@@ -1372,7 +1141,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 148.463 41.783 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5b5b0470-edaa-40b2-938b-3ec0e14914f1)
-    (property "Reference" "SW25" (at 146.431 45.974 0)
+    (property "Reference" "SW39" (at 146.431 45.974 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 148.463 45.339 0)
@@ -1389,7 +1158,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW25") (unit 1)
+          (reference "SW39") (unit 1)
         )
       )
     )
@@ -1398,7 +1167,7 @@
   (symbol (lib_id "power:GND") (at 73.025 66.802 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5d0de709-5f38-4cd6-b4df-6328d8a22450)
-    (property "Reference" "#PWR050" (at 73.025 60.452 0)
+    (property "Reference" "#PWR034" (at 73.025 60.452 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 73.025 63.373 0)
@@ -1414,7 +1183,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -1445,26 +1214,26 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 40.005 30.988 90) (unit 1)
+  (symbol (lib_id "power:GND") (at 182.88 97.663 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 68a583aa-1f97-4f17-a68f-db22218ac98f)
-    (property "Reference" "#PWR055" (at 46.355 30.988 0)
+    (property "Reference" "#PWR051" (at 189.23 97.663 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 44.196 31.623 90)
+    (property "Value" "GND" (at 187.071 98.298 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 40.005 30.988 0)
+    (property "Footprint" "" (at 182.88 97.663 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 40.005 30.988 0)
+    (property "Datasheet" "" (at 182.88 97.663 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f96755a7-4b9d-41f2-b40f-212597052258))
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR055") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -1473,7 +1242,7 @@
   (symbol (lib_id "power:GND") (at 123.317 22.86 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6bfa8400-5bd6-4243-b57a-bd6fafb86657)
-    (property "Reference" "#PWR037" (at 123.317 16.51 0)
+    (property "Reference" "#PWR042" (at 123.317 16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 123.317 19.431 0)
@@ -1489,7 +1258,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -1498,7 +1267,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 144.907 61.214 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 71820f2c-91c9-4753-bb49-e24337232ac8)
-    (property "Reference" "SW32" (at 149.479 60.071 0)
+    (property "Reference" "SW34" (at 149.479 60.071 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 144.907 57.785 0)
@@ -1515,7 +1284,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW32") (unit 1)
+          (reference "SW34") (unit 1)
         )
       )
     )
@@ -1524,7 +1293,7 @@
   (symbol (lib_id "power:GND") (at 110.363 58.674 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 72b88de6-cdd6-4383-84ef-3ae258ee9781)
-    (property "Reference" "#PWR044" (at 110.363 52.324 0)
+    (property "Reference" "#PWR038" (at 110.363 52.324 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 110.363 55.245 0)
@@ -1540,7 +1309,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -1549,7 +1318,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 155.575 61.214 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 745db841-cdea-4f26-9459-ed5722ccda72)
-    (property "Reference" "SW34" (at 160.147 60.071 0)
+    (property "Reference" "SW40" (at 160.147 60.071 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 155.575 57.785 0)
@@ -1566,7 +1335,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW34") (unit 1)
+          (reference "SW40") (unit 1)
         )
       )
     )
@@ -1575,7 +1344,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 68.199 48.895 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 75199635-07fd-4d6a-8e44-ce4eb0aad1d2)
-    (property "Reference" "SW4" (at 65.151 53.086 0)
+    (property "Reference" "SW6" (at 65.151 53.086 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 68.199 52.451 0)
@@ -1592,7 +1361,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW4") (unit 1)
+          (reference "SW6") (unit 1)
         )
       )
     )
@@ -1601,7 +1370,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 134.239 61.214 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7820e3f5-b2e6-417f-8351-af71a0445a35)
-    (property "Reference" "SW31" (at 131.953 65.532 0)
+    (property "Reference" "SW29" (at 131.953 65.532 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 134.239 64.77 0)
@@ -1618,7 +1387,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW31") (unit 1)
+          (reference "SW29") (unit 1)
         )
       )
     )
@@ -1627,7 +1396,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 127.127 41.783 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 79752936-cccc-4c6b-b3fb-857336f03161)
-    (property "Reference" "SW21" (at 131.699 40.64 0)
+    (property "Reference" "SW27" (at 131.699 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 127.127 38.354 0)
@@ -1644,7 +1413,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW21") (unit 1)
+          (reference "SW27") (unit 1)
         )
       )
     )
@@ -1653,7 +1422,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 68.199 48.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7b4dcd37-8e15-4ad0-ac2a-853521577692)
-    (property "Reference" "SW5" (at 72.771 47.752 0)
+    (property "Reference" "SW7" (at 72.771 47.752 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 68.199 45.466 0)
@@ -1670,7 +1439,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW5") (unit 1)
+          (reference "SW7") (unit 1)
         )
       )
     )
@@ -1679,7 +1448,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 116.459 41.783 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 847c22fe-cdf7-4f78-b92f-432c2c3cafdc)
-    (property "Reference" "SW18" (at 114.427 45.974 0)
+    (property "Reference" "SW20" (at 114.427 45.974 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 116.459 45.339 0)
@@ -1696,7 +1465,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW18") (unit 1)
+          (reference "SW20") (unit 1)
         )
       )
     )
@@ -1727,35 +1496,10 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 33.782 66.04 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 86b12f87-5ea0-4555-93d2-14148cd43128)
-    (property "Reference" "#PWR058" (at 40.132 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 37.973 66.675 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 33.782 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 33.782 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e6cf2a4b-015c-49c8-a094-61d065dae21a))
-    (instances
-      (project "OpenMiniRectangle"
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR058") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 89.535 48.895 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8dd20176-d30d-44f9-bb9c-4c5a0a10ddee)
-    (property "Reference" "SW8" (at 86.487 53.086 0)
+    (property "Reference" "SW12" (at 86.487 53.086 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 89.535 52.451 0)
@@ -1772,7 +1516,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW8") (unit 1)
+          (reference "SW12") (unit 1)
         )
       )
     )
@@ -1781,7 +1525,7 @@
   (symbol (lib_id "power:GND") (at 135.255 39.243 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 943b45f0-3cac-42d1-b6f3-5405053f5ccf)
-    (property "Reference" "#PWR042" (at 135.255 32.893 0)
+    (property "Reference" "#PWR046" (at 135.255 32.893 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 135.255 35.814 0)
@@ -1797,33 +1541,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR042") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:LED") (at 30.734 78.613 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 964eeb2c-3ff6-4951-96c0-7f85443e1a76)
-    (property "Reference" "D6" (at 32.3215 72.136 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 32.3215 74.676 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 30.734 78.613 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 30.734 78.613 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0faf0dd7-d546-4069-bcc4-624fbcd8b388))
-    (pin "2" (uuid 63b3c9f9-3b85-457d-9795-33ff85dd0920))
-    (instances
-      (project "OpenMiniRectangle"
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "D6") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -1832,7 +1550,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 98.298 19.685 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a085a23e-13dd-46e0-b20e-928b1f56f142)
-    (property "Reference" "SW41" (at 102.87 18.542 0)
+    (property "Reference" "SW15" (at 102.87 18.542 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 98.298 16.256 0)
@@ -1849,7 +1567,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW41") (unit 1)
+          (reference "SW15") (unit 1)
         )
       )
     )
@@ -1858,7 +1576,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 64.897 69.342 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a09059f9-bec2-493f-8813-15734505b949)
-    (property "Reference" "SW37" (at 63.119 73.533 0)
+    (property "Reference" "SW5" (at 63.119 73.533 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 64.897 72.898 0)
@@ -1875,7 +1593,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW37") (unit 1)
+          (reference "SW5") (unit 1)
         )
       )
     )
@@ -1884,7 +1602,7 @@
   (symbol (lib_id "power:GND") (at 124.587 39.243 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a404d13c-72bc-4384-ab99-a0b952baf04a)
-    (property "Reference" "#PWR041" (at 124.587 32.893 0)
+    (property "Reference" "#PWR043" (at 124.587 32.893 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.587 35.814 0)
@@ -1900,7 +1618,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -1909,7 +1627,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 147.193 25.4 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ac46b118-4f39-4d78-986e-91d0b2f9d691)
-    (property "Reference" "SW17" (at 145.415 29.591 0)
+    (property "Reference" "SW37" (at 145.415 29.591 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 147.193 28.956 0)
@@ -1926,7 +1644,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW17") (unit 1)
+          (reference "SW37") (unit 1)
         )
       )
     )
@@ -1935,7 +1653,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 75.565 69.342 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b9539cff-f477-45f6-9009-1562ceafaa70)
-    (property "Reference" "SW38" (at 73.787 73.533 0)
+    (property "Reference" "SW8" (at 73.787 73.533 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 75.565 72.898 0)
@@ -1952,7 +1670,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW38") (unit 1)
+          (reference "SW8") (unit 1)
         )
       )
     )
@@ -1961,7 +1679,7 @@
   (symbol (lib_id "power:GND") (at 131.699 58.674 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bad2cca1-5896-4b09-bbc4-e07de6a9e644)
-    (property "Reference" "#PWR046" (at 131.699 52.324 0)
+    (property "Reference" "#PWR044" (at 131.699 52.324 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 131.699 55.245 0)
@@ -1977,7 +1695,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -2012,7 +1730,7 @@
   (symbol (lib_id "power:GND") (at 54.991 46.355 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c32ceaaa-d8fa-4efb-a838-f006ff9a4680)
-    (property "Reference" "#PWR032" (at 54.991 40.005 0)
+    (property "Reference" "#PWR031" (at 54.991 40.005 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 54.991 42.926 0)
@@ -2028,7 +1746,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -2037,7 +1755,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 78.867 48.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c483275e-c4c8-4d23-9af7-9b577743bc58)
-    (property "Reference" "SW7" (at 83.439 47.752 0)
+    (property "Reference" "SW11" (at 83.439 47.752 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 78.867 45.466 0)
@@ -2054,7 +1772,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW7") (unit 1)
+          (reference "SW11") (unit 1)
         )
       )
     )
@@ -2063,7 +1781,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 137.795 41.783 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c72f82e3-a4a6-4c69-bcaf-4dcb120d3ecb)
-    (property "Reference" "SW23" (at 142.367 40.64 0)
+    (property "Reference" "SW33" (at 142.367 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 137.795 38.354 0)
@@ -2080,7 +1798,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW23") (unit 1)
+          (reference "SW33") (unit 1)
         )
       )
     )
@@ -2089,7 +1807,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 123.571 61.214 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c87f2c8d-8eac-4e12-92ca-eec649cf5cdc)
-    (property "Reference" "SW28" (at 128.143 60.071 0)
+    (property "Reference" "SW22" (at 128.143 60.071 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 123.571 57.785 0)
@@ -2106,7 +1824,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW28") (unit 1)
+          (reference "SW22") (unit 1)
         )
       )
     )
@@ -2115,7 +1833,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 136.525 25.4 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ca3e4fe2-67f3-4a7f-ab93-1997f4c6b3ac)
-    (property "Reference" "SW14" (at 134.747 29.591 0)
+    (property "Reference" "SW30" (at 134.747 29.591 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 136.525 28.956 0)
@@ -2132,25 +1850,25 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW14") (unit 1)
+          (reference "SW30") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Switch:SW_Push") (at 34.925 30.988 0) (mirror y) (unit 1)
+  (symbol (lib_id "Switch:SW_Push") (at 177.8 97.663 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce54eaeb-6c47-44e3-a5e5-00eb1734386f)
-    (property "Reference" "SW42" (at 34.925 24.765 0)
+    (property "Reference" "SW42" (at 177.8 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "SW_Push" (at 34.925 27.305 0)
+    (property "Value" "SW_Push" (at 177.8 93.98 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 34.925 25.908 0)
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 177.8 92.583 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 34.925 25.908 0)
+    (property "Datasheet" "~" (at 177.8 92.583 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8c0981b7-8d42-4728-a838-6a92fd0d49c6))
@@ -2161,7 +1879,7 @@
           (reference "SW42") (unit 1)
         )
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW43") (unit 1)
+          (reference "SW42") (unit 1)
         )
       )
     )
@@ -2170,7 +1888,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 144.907 61.214 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cfbfb408-75a1-4031-9ee3-e7b5cdd8ebf5)
-    (property "Reference" "SW33" (at 142.621 65.532 0)
+    (property "Reference" "SW35" (at 142.621 65.532 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 144.907 64.77 0)
@@ -2187,7 +1905,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW33") (unit 1)
+          (reference "SW35") (unit 1)
         )
       )
     )
@@ -2196,7 +1914,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 89.535 48.895 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2704085-e1d9-4a0a-b74f-ac0b86903d47)
-    (property "Reference" "SW9" (at 94.107 47.752 0)
+    (property "Reference" "SW13" (at 94.107 47.752 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 89.535 45.466 0)
@@ -2213,32 +1931,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 34.544 78.613 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid d3221f02-563f-4e41-92d7-7adc6deae6f0)
-    (property "Reference" "#PWR059" (at 40.894 78.613 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 38.735 79.248 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 34.544 78.613 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 34.544 78.613 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e343efb8-1112-4a01-96f8-4e88f55d5277))
-    (instances
-      (project "OpenMiniRectangle"
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR059") (unit 1)
+          (reference "SW13") (unit 1)
         )
       )
     )
@@ -2247,7 +1940,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 125.857 25.4 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d555d4c3-1b2e-4dde-8ad4-b18659c5e3c6)
-    (property "Reference" "SW13" (at 124.079 29.591 0)
+    (property "Reference" "SW25" (at 124.079 29.591 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 125.857 28.956 0)
@@ -2264,7 +1957,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW13") (unit 1)
+          (reference "SW25") (unit 1)
         )
       )
     )
@@ -2273,7 +1966,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 155.575 61.214 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d93bda77-089a-4814-803a-9abfd15303bd)
-    (property "Reference" "SW35" (at 153.289 65.532 0)
+    (property "Reference" "SW41" (at 153.289 65.532 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 155.575 64.77 0)
@@ -2290,95 +1983,32 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW35") (unit 1)
+          (reference "SW41") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:LED") (at 30.861 54.483 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid da1e269d-53f4-4644-9ce6-2f8eb7345f92)
-    (property "Reference" "D4" (at 32.4485 48.006 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 32.4485 50.546 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 30.861 54.483 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 30.861 54.483 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2f72f854-adc2-4217-a66b-73bdad328647))
-    (pin "2" (uuid eb86fe81-1347-48da-b0a0-7c26927000f7))
-    (instances
-      (project "OpenMiniRectangle"
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "D4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 24.511 54.483 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid da70e7a1-1fff-4977-90a7-0e789a331dc9)
-    (property "Reference" "R8" (at 24.511 52.9336 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1k" (at 24.511 54.483 90)
-      (effects (font (size 0.8 0.8)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 24.511 54.483 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 24.511 54.483 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C25190" (at 24.511 54.483 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6a1fa6e0-c9e6-44f5-926b-8d8b29466487))
-    (pin "2" (uuid 1e5d922c-22fa-4c28-b3df-02c1ffb91928))
-    (instances
-      (project "OpenRectangle"
-        (path "/0ee7bd02-e26d-4978-ae8c-675a718c78c0"
-          (reference "R8") (unit 1)
-        )
-      )
-      (project "OpenMiniRectangle"
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39"
-          (reference "R8") (unit 1)
-        )
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "R4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 40.386 20.447 90) (unit 1)
+  (symbol (lib_id "power:GND") (at 183.261 87.122 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid db0a1650-5a03-4796-97f3-8b15b01e051b)
-    (property "Reference" "#PWR056" (at 46.736 20.447 0)
+    (property "Reference" "#PWR052" (at 189.611 87.122 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 44.4524 21.082 90)
+    (property "Value" "GND" (at 187.3274 87.757 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 40.386 20.447 0)
+    (property "Footprint" "" (at 183.261 87.122 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 40.386 20.447 0)
+    (property "Datasheet" "" (at 183.261 87.122 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid aa2236ba-3f60-47ea-a749-0fda1d36f898))
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR056") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
       )
     )
@@ -2387,7 +2017,7 @@
   (symbol (lib_id "power:GND") (at 62.357 66.802 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ddd66ddd-3214-4d06-9499-62c81ed20c50)
-    (property "Reference" "#PWR049" (at 62.357 60.452 0)
+    (property "Reference" "#PWR032" (at 62.357 60.452 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 62.357 63.373 0)
@@ -2403,7 +2033,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -2412,7 +2042,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 136.525 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e313db1d-3752-427a-9e44-bf721d45adee)
-    (property "Reference" "SW15" (at 141.097 24.257 0)
+    (property "Reference" "SW31" (at 141.097 24.257 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 136.525 21.971 0)
@@ -2429,7 +2059,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW15") (unit 1)
+          (reference "SW31") (unit 1)
         )
       )
     )
@@ -2438,7 +2068,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_solder") (at 123.571 61.214 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e4817083-9e4e-4145-8a7a-78982dab752a)
-    (property "Reference" "SW29" (at 121.285 65.532 0)
+    (property "Reference" "SW23" (at 121.285 65.532 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_solder" (at 123.571 64.77 0)
@@ -2455,44 +2085,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW29") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 23.622 66.04 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e55dbe2f-e165-476c-bd67-a55823f9e274)
-    (property "Reference" "R8" (at 23.622 64.4906 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1k" (at 23.622 66.04 90)
-      (effects (font (size 0.8 0.8)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 23.622 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 23.622 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C25190" (at 23.622 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 04354e41-50a1-4126-ba01-1481794c4da8))
-    (pin "2" (uuid c6849f0f-a100-45ca-a01b-c43fe276a7ab))
-    (instances
-      (project "OpenRectangle"
-        (path "/0ee7bd02-e26d-4978-ae8c-675a718c78c0"
-          (reference "R8") (unit 1)
-        )
-      )
-      (project "OpenMiniRectangle"
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39"
-          (reference "R8") (unit 1)
-        )
-        (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "R12") (unit 1)
+          (reference "SW23") (unit 1)
         )
       )
     )
@@ -2501,7 +2094,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 75.565 69.342 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eb10ef18-c957-4b49-83ac-9b0e077835ad)
-    (property "Reference" "SW39" (at 80.137 68.199 0)
+    (property "Reference" "SW9" (at 80.137 68.199 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 75.565 65.913 0)
@@ -2518,7 +2111,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW39") (unit 1)
+          (reference "SW9") (unit 1)
         )
       )
     )
@@ -2527,7 +2120,7 @@
   (symbol (lib_id "power:GND") (at 121.031 58.674 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f0d2ef1d-64ff-4aff-9887-e98c423a48be)
-    (property "Reference" "#PWR045" (at 121.031 52.324 0)
+    (property "Reference" "#PWR041" (at 121.031 52.324 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.031 55.245 0)
@@ -2543,7 +2136,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -2552,7 +2145,7 @@
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 116.459 41.783 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f4d9a42b-fb01-4b89-a18f-9923516a497d)
-    (property "Reference" "SW19" (at 121.031 40.64 0)
+    (property "Reference" "SW21" (at 121.031 40.64 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MX_SW_HS" (at 116.459 38.354 0)
@@ -2569,7 +2162,7 @@
     (instances
       (project "OpenMiniRectangle"
         (path "/798975c2-d104-4b51-bc9d-eb81d8f1bd39/41de1745-7488-4e44-91c5-64997c6fd692"
-          (reference "SW19") (unit 1)
+          (reference "SW21") (unit 1)
         )
       )
     )

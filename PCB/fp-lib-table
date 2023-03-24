@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/footprints")(options "")(descr ""))
   (lib (name "marbastlib-mx")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/marbastlib-mx.pretty")(options "")(descr ""))
+  (lib (name "qw-logo")(type "KiCad")(uri "${KIPRJMOD}/qw-footprints/qw-logo")(options "")(descr ""))
 )
